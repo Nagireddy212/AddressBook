@@ -2,6 +2,7 @@ public class AddressBook {
 
     String FirstName;
     String LastName;
+    String Address;
     String City;
     String State;
     String Email;
@@ -9,9 +10,10 @@ public class AddressBook {
     int Zip;
 
 
-    public AddressBook(String FirstName, String LastName, String City, String State, String Email, long MobileNo, int Zip) {
+    public AddressBook(String FirstName, String LastName, String Address, String City, String State, String Email, long MobileNo, int Zip) {
         this.FirstName = FirstName;
         this.LastName = LastName;
+        this.Address = Address;
         this.City = City;
         this.State = State;
         this.Email = Email;
@@ -34,6 +36,13 @@ public class AddressBook {
 
     public void setLastName(String LastName) {
         this.LastName = LastName;
+    }
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String Address) {
+        this.Address = Address;
     }
 
     public String getCity() {

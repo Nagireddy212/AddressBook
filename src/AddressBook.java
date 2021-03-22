@@ -21,42 +21,29 @@ public class AddressBook {
         this.Zip = Zip;
 
     }
-
-    public String getFirstName() {
-        return FirstName;
-    }
-
-    public void setFirstName(String FirstName) {
-        this.FirstName = FirstName;
-    }
+    public String getFirstName() { return FirstName; }
+    public void setFirstName(String FirstName) {this.FirstName = FirstName; }
 
     public String getLastName() {
         return LastName;
     }
+    public void setLastName(String LastName) { this.LastName = LastName;}
 
-    public void setLastName(String LastName) {
-        this.LastName = LastName;
-    }
     public String getAddress() {
         return Address;
     }
-
-    public void setAddress(String Address) {
-        this.Address = Address;
-    }
+    public void setAddress(String Address) {this.Address = Address;}
 
     public String getCity() {
         return City;
     }
-
-    public void setCity(String city) {
+    public void setCity(String City) {
         this.City = City;
     }
 
     public String getState() {
         return State;
     }
-
     public void setState(String State) {
         this.State = State;
     }
@@ -64,7 +51,6 @@ public class AddressBook {
     public String getEmail() {
         return Email;
     }
-
     public void setEmail(String Email) {
         this.Email = Email;
     }
@@ -72,7 +58,6 @@ public class AddressBook {
     public long getMobileNo() {
         return MobileNo;
     }
-
     public void setMobileNo(long MobileNo) {
         this.MobileNo = MobileNo;
     }
@@ -80,7 +65,6 @@ public class AddressBook {
     public int getZip() {
         return Zip;
     }
-
     public void setZip(int Zip) {
         this.Zip = Zip;
     }

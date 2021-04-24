@@ -70,7 +70,7 @@ public class AddressBook {
     }
 
     public String toString() {
-        return "ADDRESSBOOK [FIRSTNAME=" + FirstName + ", LASTNAME=" + LastName + ", CITY=" + City
+        return "ADDRESSBOOK [FIRSTNAME=" + FirstName + ", LASTNAME=" + LastName + ", Address="+Address+", CITY=" + City
                 + ", STATE=" + State + ", PINCODE=" + Zip + ", MOBILENO=" + MobileNo + ", EMAIL =" + Email + "]" + "\n";
     }
     public static void main(String[] args) {

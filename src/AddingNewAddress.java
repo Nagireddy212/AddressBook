@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 public class AddingNewAddress {
+    ArrayList<AddressBookList> addressBookNameList = new ArrayList<>();
     public ArrayList<AddressBook> ContactsBook = new ArrayList<>();
     public void AddContacts()
     {
@@ -101,7 +102,9 @@ public class AddingNewAddress {
             System.out.println("2.Display Contact Details");
             System.out.println("3.Edit Contact Details");
             System.out.println("4.Delete Contact");
-            System.out.println("5.Exit");
+            System.out.println("5.Add New Address Book");
+            System.out.println("6.Display New Address Book");
+            System.out.println("7.Exit");
             System.out.println("Select any one option:");
             int choice = scan.nextInt();
             switch (choice) {
@@ -119,10 +122,34 @@ public class AddingNewAddress {
                     address.DeletePersonFirstname();
                     break;
                 case 5:
+                    address.newAddressBook();
+                    break;
+                case 6:
+                    address.displayAddressBook();
+                    break;
+                case 7:
                     System.out.println("Exit");
                     N = 1;
                     break;
             }
+        }
+    }
+    public void newAddressBook()
+    {
+        System.out.println("Enter AddressBook Name");
+        Scanner scan = new Scanner(System.in);
+        String userInputBookName = scan.next();
+        AddressBookList addressbook = new AddressBookList(userInputBookName);
+        addressBookNameList.add(addressbook);
+        System.out.println("New Address Book Name is added to list");
+    }
+    public void displayAddressBook()
+    {
+
+        System.out.println("Existing AddressBook Names are : ");
+
+        for (AddressBookList addressBookList : addressBookNameList) {
+            System.out.println(addressBookList);
         }
     }
     public void DeletePersonFirstname()
